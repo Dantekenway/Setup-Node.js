@@ -1,10 +1,11 @@
 import express from 'express';
-import '@controllers/UserControllers';
+
 
 const app = express();
+// eslint-disable-next-line arrow-body-style
 app.get('/', (request, response) => {
   return response.json({
-   message:' Hello World'
+    message: ' Hello World',
   })
 })
 app.listem(3333);
